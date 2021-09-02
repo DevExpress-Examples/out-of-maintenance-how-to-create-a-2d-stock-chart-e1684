@@ -25,21 +25,21 @@ Namespace Stock2DChart
 		End Property
 		Public Sub New()
 			Data = New ObservableCollection(Of DataPoint) From {
-				New DataPoint(New Date(2019,1,1), 25, 28, 24, 27),
-				New DataPoint(New Date(2019,1,2), 27, 35, 26, 32),
-				New DataPoint(New Date(2019,1,3), 32, 35, 27, 29),
-				New DataPoint(New Date(2019,1,4), 29, 37, 29, 36),
-				New DataPoint(New Date(2019,1,5), 36, 37, 32, 33)
+				New DataPoint(New DateTime(2019,1,1), 25, 28, 24, 27),
+				New DataPoint(New DateTime(2019,1,2), 27, 35, 26, 32),
+				New DataPoint(New DateTime(2019,1,3), 32, 35, 27, 29),
+				New DataPoint(New DateTime(2019,1,4), 29, 37, 29, 36),
+				New DataPoint(New DateTime(2019,1,5), 36, 37, 32, 33)
 			}
 		End Sub
 	End Class
 	Public Class DataPoint
-		Public Property [Date]() As Date
+		Public Property [Date]() As DateTime
 		Public Property Open() As Double
 		Public Property High() As Double
 		Public Property Low() As Double
 		Public Property Close() As Double
-		Public Sub New(ByVal arg As Date, ByVal open As Double, ByVal high As Double, ByVal low As Double, ByVal close As Double)
+		Public Sub New(ByVal arg As DateTime, ByVal open As Double, ByVal high As Double, ByVal low As Double, ByVal close As Double)
 			Me.Date = arg
 			Me.Open = open
 			Me.High = high

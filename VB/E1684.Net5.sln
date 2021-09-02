@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 16
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Stock2DChart", "Stock2DChart.Net5.vbproj", "{4542BDEE-A905-441F-9781-D074FE9EA9EF}"
 EndProject
